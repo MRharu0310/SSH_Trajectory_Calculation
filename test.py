@@ -6,7 +6,7 @@ from ultralytics import YOLO
 model = YOLO("dataset/runs/detect/train/weights/best.pt")  # トレーニング済みモデルパス
 
 # 動画の読み込み
-video_path = "videos/IMG_9623.mov"  # 動画ファイルのパス
+video_path = "videos/IMG_9604.mov"  # 動画ファイルのパス
 cap = cv2.VideoCapture(video_path)
 
 # 動画の保存設定
