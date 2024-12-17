@@ -1,0 +1,4 @@
+これをターミナルで実行：
+yolo train model=yolov8n.yaml data=/Users/satoharunobu/Desktop/SSH画像認識/dataset/dataset.yaml epochs=500 batch=16 imgsz=640
+推論：
+yolo predict model=/Users/satoharunobu/Desktop/SSH画像認識/dataset/runs/detect/train/weights/best.pt source=/Users/satoharunobu/Desktop/SSH画像認識/videos/IMG_9598.mov show=True
