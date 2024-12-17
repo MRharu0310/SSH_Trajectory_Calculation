@@ -1,0 +1,17 @@
+train: /Users/satoharunobu/Library/CloudStorage/GoogleDrive-sharuharu0310@gmail.com/マイドライブ/学校/SSH/SSH画像認識/dataset/train/images
+val: /Users/satoharunobu/Library/CloudStorage/GoogleDrive-sharuharu0310@gmail.com/マイドライブ/学校/SSH/SSH画像認識/dataset/val/images
+nc: 1
+names: ['bottle']
+augment:
+  flipud: 0.5  # 上下反転
+  fliplr: 0.5  # 左右反転
+  degrees: 10  # 回転
+  translate: 0.1  # 平行移動
+  scale: 0.5  # スケーリング
+  shear: 0.0  # せん断
+  perspective: 0.0  # 透視変換
+  mosaic: 1.0  # モザイク
+  mixup: 0.0  # ミキシング
+  blur: 0.2           # ぼかし
+  gaussian_noise: 0.01  # ガウスノイズ
+  motion_blur: 0.3    # モーションブラー
